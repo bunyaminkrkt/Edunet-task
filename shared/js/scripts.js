@@ -1,6 +1,6 @@
 $(function(){
-	$('#header').load('shared/header.html');
-	$('#footer').load('shared/footer.html');	
+	$('#header').load('/shared/header.html');
+	$('#footer').load('/shared/footer.html');	
 });
 function mobileToggle(){
 	let element = document.getElementById('navigateList')
