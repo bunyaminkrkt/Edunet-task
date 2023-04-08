@@ -1,0 +1,887 @@
+/* CSS FILE */
+:root {
+    --toolbarBorder: #e1e1e1;
+    --white: #ffffff;
+    --headerTitleBg: url(/shared/images/header-bg.png);
+    --schoolLogo: url(/shared/images/schoolLogo.png);
+    --slider: url(/shared/images/slider.png);
+    --item1: url(/shared/images/listItem1.png);
+    --item2: url(/shared/images/listItem2.png);
+    --item3: url(/shared/images/listItem3.png);
+    --leaf: url(/shared/images/leaves.png);
+    --dateBG: url(/shared/images/dateBG.png);
+    --news1: url(/shared/images/news1.png);
+    --news2: url(/shared/images/news2.png);
+    --parallax: url(/shared/images/parallax.png);
+    --album1: url(/shared/images/album1.png);
+    --album2: url(/shared/images/album2.png);
+    --footerCity: url(/shared/images/CityscapeFooter.png);
+    --fortyfyfl: url(/shared/images/FortilyFLFooter.png);
+    --edunetLogo: url(/shared/images/edunetlogo.png);
+    --primaryColor: rgb(9, 62, 82);
+    --secondaryColor: #daa900;
+    --thirdColor: #093e52;
+}
+
+body {
+    font-family: 'Montserrat Alternates';
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+.toolbar {
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: black;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: right;
+}
+
+.mainToolbar {
+    border-bottom: 1px solid var(--toolbarBorder);
+}
+
+.toolbar ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    border-right: 1px solid var(--toolbarBorder);
+}
+
+.toolbar ul li {
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    border-left: 1px solid var(--toolbarBorder);
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.headerTitle {
+    background-image: var(--headerTitleBg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom;
+    padding: 30px 0;
+}
+
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schoolLogo {
+    background-image: var(--schoolLogo);
+    background-size: 156px;
+    width: 156px;
+    height: 156px;
+}
+
+.schoolName h1 {
+    font-size: 75px;
+    font-family: "MinionPro";
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+}
+
+.schoolName h2 {
+    font-size: 50px;
+    font-family: "MinionPro";
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+
+}
+
+.navbar {
+    background-color: var(--primaryColor);
+}
+
+.navlist {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: "Montserrat Alternates";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.navlist li {
+    padding: 15px 0 10px 0;
+    box-sizing: border-box
+}
+
+.navlist li:hover {
+    border-bottom: 5px solid var(--secondaryColor);
+}
+
+.navlist a {
+    color: white;
+    text-decoration: none;
+}
+
+.navlist li:nth-child(even) {
+    color: var(--secondaryColor);
+}
+
+.navlist li:nth-child(3) {
+    border-bottom: 5px solid var(--secondaryColor);
+    box-sizing: border-box;
+}
+
+.slider {
+    background-image: var(--slider);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 4px solid var(--secondaryColor);
+    position: relative;
+}
+
+.linkList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.linkList div:nth-child(1) .quickLinkImage {
+    background-image: var(--item1);
+    background-repeat: no-repeat;
+}
+
+.linkList div:nth-child(2) .quickLinkImage {
+    background-image: var(--item2);
+    background-repeat: no-repeat;
+}
+
+.linkList div:nth-child(3) .quickLinkImage {
+    background-repeat: no-repeat;
+    background-image: var(--item3);
+
+}
+
+.quickListText {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 19px;
+    width: 150px;
+    background-color: var(--thirdColor);
+    background-image: var(--leaf);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quickLink {
+    background-color: white;
+    border-top: 4px solid var(--secondaryColor);
+    padding: 40px;
+
+}
+
+.quickLinkImage {
+    width: 190px;
+}
+
+.linkList div {
+    height: 120px;
+    display: flex;
+    cursor: pointer;
+}
+
+.events-news {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.events ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+
+.events h3,
+.news h3 {
+    text-align: center;
+    font-size: 34px;
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+.eventsDate {
+    background-image: var(--dateBG);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primaryColor);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 0 20px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eventsDate p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.event {
+    display: flex;
+    gap: 30px;
+}
+
+.event div p:nth-child(1) {
+    color: var(--primaryColor);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.event p {
+    margin: 0 0 5px 0;
+}
+
+.eventButtons {
+    display: flex;
+    gap: 20px;
+}
+
+.eventButtons a,
+.newsButtons a,
+.videoInfo a {
+    color: var(--primaryColor);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.eventButtons a:hover,
+.newsButtons a:hover,
+.videoInfo a:hover {
+    border-bottom: 2px solid var(--secondaryColor);
+}
+
+.eventButtons a::after,
+.newsButtons a::after,
+.videoInfo a::after {
+    content: '\203A';
+    color: var(--secondaryColor);
+    font-size: 25px;
+    font-weight: 800;
+    padding-left: 2px;
+}
+
+.news ul {
+    padding: 0;
+}
+
+.news ul .new:nth-child(1) .newsBG {
+    background-image: var(--news1);
+}
+
+.news ul .new:nth-child(2) .newsBG {
+    background-image: var(--news2);
+}
+
+.newsBG {
+    width: 195px;
+    height: 140px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.new {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 2px dotted var(--primaryColor);
+}
+
+.newText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.newText {
+    width: 350px;
+}
+
+.newText h3,
+.newText p {
+    margin: 0;
+}
+
+.newTitle {
+    text-align: start;
+    margin: 0;
+}
+
+.eventButtons {
+    padding-top: 15px;
+}
+
+.parallax {
+    background-image: var(--parallax);
+    height: 640px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "MinionPro";
+}
+
+.parallax .gradient {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, rgba(9, 9, 121, 0.05926120448179273) 43%, rgba(8, 76, 84, 1) 100%);
+}
+
+.parallaxTitle {
+    color: var(--secondaryColor);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.parallaxMainTitle {
+    color: var(--white);
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.parallaxTitle,
+.parallaxMainTitle {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.parallaxText {
+    padding: 70px 0 90px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.albumBG {
+    width: 350px;
+    height: 250px;
+}
+
+.albumItems {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.albumItem {
+    border: 1px solid var(--toolbarBorder);
+}
+
+.albumItems .albumItem:nth-child(1) .albumBG {
+    background: var(--album1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.albumItems .albumItem:nth-child(2) .albumBG {
+    background: var(--album2);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.albumText {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.albumTitle {
+    font-size: 25px;
+}
+
+.featuredAlbums .container {
+    width: 720px;
+}
+
+.albums {
+    color: var(--primaryColor);
+}
+
+.videoHighlights {
+    margin-top: 50px;
+}
+
+.video {
+    display: flex;
+}
+
+.videoInfo {
+    height: auto;
+    padding: 0 0 0 30px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
+.videoInfo h3 {
+    font-size: 40px;
+}
+
+.videoInfo p {
+    padding: 25px 0;
+    font-size: 19px;
+}
+
+.videoInfo a {
+    color: #fff;
+}
+
+.footerCityImage {
+    background-image: var(--footerCity);
+    width: 540px;
+    height: 85px;
+    margin-right: 0;
+    margin-left: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footerBand {
+    background-color: var(--primaryColor);
+}
+
+.footerList {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.FooterSchoolLogo {
+    background-image: var(--schoolLogo);
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+}
+
+.footerSchoolMainName {
+    font-size: 20px;
+}
+
+.footerSchool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "MinionPro";
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footerAdress p,
+.footerPhone p {
+    width: 120px;
+    border-left: 2px solid var(--secondaryColor);
+    padding-left: 10px;
+}
+
+.FooterSchoolText {
+    margin-left: 200px;
+}
+
+.fortyfyfl {
+    background-image: var(--fortyfyfl);
+    width: 110px;
+    height: 75px;
+}
+
+.copyrightFooter {
+    font-size: 12px;
+    font-family: "Montserrat";
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.poweredByFooter {
+    background-color: var(--toolbarBorder);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.poweredByFooter p {
+    margin: 0 0 10px 0;
+}
+
+.edunetLogo {
+    width: 185px;
+    height: 9px;
+    background-image: var(--edunetLogo);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.mobileButton {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .footerSchool {
+        flex-direction: column;
+    }
+
+    .FooterSchoolLogo {
+        position: static;
+    }
+
+    .footerAdress {
+        margin-top: 0px;
+    }
+    .footerCityImage{
+        display: none;
+    }
+    .slider{
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .footerAdress {
+        margin-top: 40px;
+    }
+    .slider {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .schoolName h1 {
+        font-size: 30px;
+
+    }
+
+    .schoolLogo {
+        width: 120px;
+        height: 120px;
+        background-size: 120px;
+    }
+
+    .schoolName h2 {
+        font-size: 20px;
+    }
+
+    .headerTitle {
+        background-size: contain;
+    }
+
+
+    .mainTitle {
+        flex-direction: column;
+    }
+
+    .navlist {
+        flex-direction: column;
+    }
+
+    .navlist li:nth-child(even) {
+        display: none;
+    }
+
+    .albumItems {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .albumTitle {
+        text-align: center;
+    }
+
+    .parallax {
+        height: 400px;
+    }
+
+    .parallaxMainTitle {
+        font-size: 35px;
+    }
+
+    .parallaxTitle {
+        font-size: 15px;
+    }
+
+    .footerList {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footerAdress p,
+    .footerPhone p {
+        width: auto;
+        border-left: 2px solid var(--secondaryColor);
+        padding-left: 10px;
+    }
+
+    .FooterSchoolText {
+        margin-left: 10px;
+    }
+
+
+    .featuredAlbums .container {
+        width: 90%;
+    }
+
+    .quickLink {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .quickLink .container {
+        width: 350px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .slider {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .navlist {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+    }
+    #navigateList{
+        display: none;
+    }
+    .navlist li:nth-child(even) {
+        display: none;
+    }
+
+    .quickLink {
+        position: absolute;
+        bottom: 0;
+        padding: 10px 0 0;
+        top: 100%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+    }
+
+    .quickLinkImage {
+        width: 180px;
+    }
+
+    .quickListText {
+        width: 180px;
+    }
+
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .news {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+
+
+    .linkList {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .events-news {
+        flex-direction: column;
+        margin-top: 400px;
+        gap: 50px;
+    }
+
+    .newText {
+        width: auto;
+    }
+
+    .video {
+        flex-direction: column;
+    }
+
+    .videoInfo {
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        margin-top: 60px;
+    }
+
+}
+@media only screen and (min-width: 900px){
+    .mobileButton{
+        display: none;
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+    .video {
+        flex-direction: row;
+    }
+
+    .videoInfo {
+        width: 100%;
+    }
+
+    .events-news {
+        flex-direction: row;
+        margin-top: 100px;
+        gap: 50px;
+    }
+
+    .navlist {
+        flex-direction: row;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .navlist li:nth-child(even) {
+        display: block;
+    }
+
+    .quickLink {
+        padding: 40px 5px 0;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .newText {
+        width: 350px;
+    }
+
+    .quickLinkImage {
+        width: 150px;
+    }
+
+    .quickListText {
+        width: 120px;
+    }
+
+    .quickLink .container {
+        width: 850px;
+    }
+
+    video {
+        width: 600px;
+        height: auto;
+    }
+
+    .news {
+        width: 450px;
+    }
+
+    .slider {
+        height: 600px;
+    }
+
+    .linkList {
+        flex-direction: row;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 900px) {
+    #navigateList{
+        display: flex;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .news {
+        width: 700px;
+    }
+
+    .quickLink {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+ul {
+    padding: 0;
+}
